@@ -64,3 +64,63 @@ as.integer(3.14)
 On the other hand, it is erroneous trying to parse a non-decimal string.
 
 as.integer("HI") // error
+
+## Logical
+A logical value is often created via comparison between variables.
+
+x = 1; y = 1
+
+z = x > y
+
+z
+
+-> FALSE
+
+class(z)
+
+-> "logical"
+
+Standard logical operations are "&"(and), "|"(or), "!"(negation).
+
+x = TRUE; y = FALSE
+
+x & y
+
+-> FASLE
+
+x | y
+
+-> TRUE
+
+!x
+
+-> FALSE
+
+## Character
+A character object is used to represent string values in R. We convert object into character values with the <b>as.character()</b> function:
+
+x = as.character(3.14)
+
+class(x)
+
+-> "character"
+
+Two character values can be concatenated with the <b>paste</b> function.
+
+fname = "Jone"; lname = "Smith"
+
+paste(fname,lname)
+
+-> "Jone Smith"
+
+However, it is often more convenient to create a readable string with the <b>sprintf</b> function, which has a C language syntax.
+
+sprintf("%s has %d dollars, fname, 10) << <b>Different from python!!, it seems to be C</b>
+
+-> "Jone has 10 dollars"
+
+To extract a substring, we apply the <b>substr</b> function. Here is an example showing how to extract the substring between the second and tenth positions in a string.
+
+substr("Mary has a little lamb.", start=2, stop=10)
+
+-> "ary has a"
