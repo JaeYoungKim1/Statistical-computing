@@ -13,7 +13,9 @@ help(c)
 
 ## Extension and Import Package
 Invoke the <b>install.packages</b> function at the prompt and follow the instruction.
+
 install.packages("ggplot2")
+
 library(ggplot2)
 
 # Data type
