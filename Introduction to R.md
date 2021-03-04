@@ -276,3 +276,60 @@ s = c("aa", "bb", "cc", "dd", "ee")
 b = c(TRUE, FALSE, TRUE, FALSE, FALSE)
 x = list(n,s,b,3)
 ### List slicing
+x[2]
+
+-> "aa" "bb" "cc" "dd" "ee"
+
+x[c(2,4)]
+
+-> "aa" "bb" "cc" "dd" "ee" , 3 // represent 2nd and 4th elements in x
+
+### Member Reference
+
+x[[2]]
+
+-> "aa" "bb" "cc" "dd" "ee" // equals to x[2], but it seems to be reference 2nd element x, not s
+
+x[[2]][1] = "ta"
+
+x[[2]]
+
+-> "ta" "bb" "cc" "dd" "ee"
+
+s
+
+-> "aa" "bb" "cc" "dd" "ee" // s is unaffected
+
+### Names List members
+
+v = list(bob=c(2,3,5), john=c("aa", "bb"))
+
+v
+
+-> bob 2 3 5, john "aa" "bb"
+
+v["bob"]
+
+-> 2 3 5
+
+### Member Reference
+v[["bob"]] or $bob
+
+### Data Frame
+x = c(1,2,3)
+
+y = c("a", "b", "c")
+
+z = c(TRUE, FALSE, TRUE)
+
+df = data.frame(x,y,z)
+
+df // df is a data frame
+
+-> x y z
+
+1  1 a TRUE
+
+2  2 b FALSE
+
+3  3 c TRUE
