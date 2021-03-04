@@ -7,3 +7,10 @@ x = "HI" or X <- "HI"
 R functions are invoked by its name, then followed by the parenthesis, and zero or more arguments. The following apply the function <b>'c'</b> to combine five numeric values into a vector.
 
 c(1,2,3,4,5)
+
+## Getting Help in R
+help(c)
+
+## Extension Packge
+Invoke the <b>install.packages</b> function at the prompt and follow the instruction.
+install.packages("ggplot2"
