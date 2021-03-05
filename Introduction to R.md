@@ -333,3 +333,7 @@ df // df is a data frame
 2  2 b FALSE
 
 3  3 c TRUE
+
+nrow(name) // number of rows
+
+ncol(name) // number of columns
